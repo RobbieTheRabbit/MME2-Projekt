@@ -1,32 +1,75 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <title>MME2 Übung I</title>
 
-<head>
-    <style>
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <script src="js/app.js" type="text/javascript"></script>
 
-
-    </style>
 </head>
 
 <body>
-
-    <div class="container">
-
+    <div class="wrap">
         <header>
-            <title>TEXT</title>
+            <h1>Multimedia Engeneering 2</h1>
+            <h2>1. Übung - Videos einbinden</h2>
         </header>
+        <div class="main">
+            <div class="content">
+                <!--WEBM Video-->
+                <section id="video1">
+                    <h3>WebM Video</h3>
 
+                    <video id="vid1" controls>
+                        <source src=vid/big_buck_bunny.webm type=video/webm>
+                    </video>
 
+                    <div id="buttons">
+                        <button id="playVid1">ABSPIELEN</button>
+                        <button id="stopVid1">STOP</button>
+                    </div>
+                </section>
 
-        <article>
-            <h1>HI</h1>
-            <p>Mir war gerade langweilig :P</p>
-        </article>
+                <!--OGG Video-->
+                <section id="video2">
+                    <h3>.ogg Video</h3>
+                    <video id="vid2" controls>
+                        <source src=vid/big_buck_bunny.ogv type=video/ogg>
+                    </video>
+                    <div id="buttons">
+                        <button id="playVid2">ABSPIELEN</button>
+                        <button id="stopVid2">STOP</button>
+                    </div>
+                </section>
 
-        <footer>MME II - WiSe16/17</footer>
+                <!--MP4 Video-->
+                <section id="video3">
+                    <h3>.mp4 Video</h3>
+                    <video id="vid3" controls>
+                        <source src=vid/big_buck_bunny.mp4 type=video/mp4>
+                    </video>
+                    <div id="buttons">
+                        <button id="playVid3">ABSPIELEN</button>
+                        <button id="stopVid3">STOP</button>
+                    </div>
+                </section>
+            </div>
 
+            <div class="sidebar">
+                <ul>
+                    <p>Videoformate</p>
+                    <li><a href="#video1">WebM</a></li>
+                    <li><a href="#video2">OGG</a></li>
+                    <li><a href="#video3">MP4</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+            <p>Erstellt von: Die Verplanten</p>
+        </footer>
     </div>
-
 </body>
-
-</html>
+</html>      
