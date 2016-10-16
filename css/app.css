@@ -28,18 +28,18 @@ header {
 }
 
 .sidebar {
-    background: #B0B5BD;
-    width: 10px: padding: 1%;
+    background: #D9DFE8;
+    padding: 1%;
     order: 0;
     flex: auto;
     align-self: stretch;
     font-weight: bold;
-    border-left: 12px solid #bac6c7;
+    border-left: 12px solid #83878C;
     color: #2B2B2B;
 }
 
 .sidebar a {
-    color: white;
+    color: #8C91BF;
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
