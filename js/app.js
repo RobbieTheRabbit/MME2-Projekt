@@ -1,3 +1,18 @@
+//  Sidebar öffnen
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "220px";
+    document.getElementById("content").style.marginRight = "220px";
+}
+
+//  Sidebar öffnen
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("content").style.marginRight = "0";
+}
+
+
+//  Abspielen/Pause/Stop Buttons
 window.onload = function () {
     var vid1 = document.getElementById("vid1");
     var vid2 = document.getElementById("vid2");
