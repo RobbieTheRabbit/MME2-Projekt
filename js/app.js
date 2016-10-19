@@ -2,13 +2,13 @@
 
 function openNav() {
     document.getElementById("mySidenav").style.width = "220px";
-    document.getElementById("content").style.marginRight = "220px";
+    document.getElementById("content").style.marginLeft = "220px";
 }
 
 //  Sidebar öffnen
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("content").style.marginRight = "0";
+    document.getElementById("content").style.marginLeft = "0";
 }
 
 
