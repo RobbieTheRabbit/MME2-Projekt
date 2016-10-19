@@ -31,7 +31,7 @@ header {
 
 .sidenav {
     height: 100%;
-    float:right;
+    float: right;
     /* 100% Full-height */
     width: 0;
     /* 0 width - change this with JavaScript */
@@ -49,7 +49,8 @@ header {
     /* Place content 60px from the top */
     transition: 0.5s;
     /* 0.5 second transition effect to slide in the sidenav */
-    border-right: 2px solid #FF3F10;
+    border-right: 3px solid #FF3F10;
+    font-size: 25px;
     color: whitesmoke;
 }
 
@@ -59,8 +60,8 @@ header {
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    font-size: 20px;
+    color:floralwhite;
     display: block;
     transition: 0.3s
 }
