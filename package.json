@@ -1,0 +1,24 @@
+{
+    "name": "MME2-exercise2",
+    "version": "1.0.0",
+    "description": "Second exercise for MME2 from WiSe16/17",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": {
+        "MME2",
+        "Beuth",
+        "exercise",
+    },
+    "repository": {
+        "type": "git",
+        "url": "hhtp://github.com/RobbieTheRabbit/MME2-Projekt.git"
+    },
+    "author": "Die Verplanten - Timo, Oliver and Sven",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/RobbieTheRabbit/MME2-Projekt/issues"
+    },
+    "homepage": "https://github.com/RobbieTheRabbit/MME2-Projekt#readme"
+}
