@@ -1,25 +1,29 @@
-//  Variante with Express
-var express = require('express'); //  integrate the Express module
-var app = express();
-//  Initializing A JavaScript Date
-var now = new Date();
+/**
+JavaScript Application to start the Node Server
+Author: Oliver, Timo & Sven
+Date: 29.10.2016
 
-//  Route --> integrate the content from the first exercise
+**/
+
+//  integrate the Express module
+var app = express();
+var express = require('express');
+//  Initializing A JavaScript Date
+var timeNow = new Date();
+
+//  Route --> integrate the content from the first exercise (3. task)
 app.use('/public', express.static('static'));
 
-
-
-//  Route --> Current time  with text/plain
+//  Route --> time output with text/plain (4. task)
 app.get('/time/', function (req, res) {
     res.type("text/plain");
-    res.send(now);
+    res.send(timeNow);
 });
 
-//   the Hello World mainpage
-app.get('/*', function (req, res) { //  add * in the route for the 1. task
+//  The Hello World mainpage for all other inputs/routes (1. task)
+app.get('/*', function (req, res) {
     res.send('<h1>Hello World!</h1>'); //   purpose TAG 
 });
-
 
 //  Set Port and verification via terminal
 app.listen(8000, function () {
