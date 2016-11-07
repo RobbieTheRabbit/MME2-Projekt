@@ -1,27 +1,29 @@
 //  Variante with Express
 var express = require('express'); //  integrate the Express module
 var app = express();
+//  Initializing A JavaScript Date
+var now = new Date();
 
-
-//   the Hello World mainpage
-app.get('/', function (req, res) { //  add * in the route for the 1. task
-    res.send('<h1>Hello World!</h1>'); //   TAG purpose
-});
-
-//  integrate the content from the first exercise
+//  Route --> integrate the content from the first exercise
 app.use('/public', express.static('static'));
 
 
 
-//  Current time 
+//  Route --> Current time  with text/plain
 app.get('/time/', function (req, res) {
     res.type("text/plain");
-    res.send('<h1>Hello World!</h1>');
+    res.send(now);
 });
+
+//   the Hello World mainpage
+app.get('/*', function (req, res) { //  add * in the route for the 1. task
+    res.send('<h1>Hello World!</h1>'); //   purpose TAG 
+});
+
 
 //  Set Port and verification via terminal
 app.listen(8000, function () {
-    console.log('Server is running - localhost:8000!');
+    console.log('Server is now running - localhost:8000!');
 });
 
 
